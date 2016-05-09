@@ -12,7 +12,6 @@
 		249A0D2C1CCF6ED000C715D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249A0D2A1CCF6ED000C715D7 /* Main.storyboard */; };
 		249A0D2E1CCF6ED000C715D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 249A0D2D1CCF6ED000C715D7 /* Assets.xcassets */; };
 		249A0D311CCF6ED000C715D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249A0D2F1CCF6ED000C715D7 /* LaunchScreen.storyboard */; };
-		249A0D3B1CCF77E500C715D7 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 249A0D3A1CCF77E500C715D7 /* TestClass.m */; };
 		CD3A7D63811F114F7E8C9DB8 /* Pods_ReactiveCocoa3Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AABE600F97AD3591EE43E77 /* Pods_ReactiveCocoa3Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,8 +24,6 @@
 		249A0D301CCF6ED000C715D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		249A0D321CCF6ED000C715D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		249A0D381CCF77E500C715D7 /* ReactiveCocoa3Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactiveCocoa3Demo-Bridging-Header.h"; sourceTree = "<group>"; };
-		249A0D391CCF77E500C715D7 /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
-		249A0D3A1CCF77E500C715D7 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
 		7AABE600F97AD3591EE43E77 /* Pods_ReactiveCocoa3Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveCocoa3Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9ED8466855B2D227F33B63 /* Pods-ReactiveCocoa3Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoa3Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoa3Demo/Pods-ReactiveCocoa3Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		E343EB1A3C3EA321A9AFCDB6 /* Pods-ReactiveCocoa3Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoa3Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoa3Demo/Pods-ReactiveCocoa3Demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,8 +64,6 @@
 			children = (
 				249A0D261CCF6ED000C715D7 /* AppDelegate.swift */,
 				249A0D281CCF6ED000C715D7 /* ViewController.swift */,
-				249A0D391CCF77E500C715D7 /* TestClass.h */,
-				249A0D3A1CCF77E500C715D7 /* TestClass.m */,
 				249A0D2A1CCF6ED000C715D7 /* Main.storyboard */,
 				249A0D2D1CCF6ED000C715D7 /* Assets.xcassets */,
 				249A0D2F1CCF6ED000C715D7 /* LaunchScreen.storyboard */,
@@ -217,7 +212,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				249A0D3B1CCF77E500C715D7 /* TestClass.m in Sources */,
 				249A0D291CCF6ED000C715D7 /* ViewController.swift in Sources */,
 				249A0D271CCF6ED000C715D7 /* AppDelegate.swift in Sources */,
 			);

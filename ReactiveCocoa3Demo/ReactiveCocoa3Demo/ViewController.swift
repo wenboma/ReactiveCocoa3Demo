@@ -28,9 +28,10 @@ class ViewController: UIViewController {
         self.title = "Signal"
         
 //        self.testFunc1()
-        
 //        self.testFunc2()
-        self.testFucn3()
+//        self.testFucn3()
+//        self.testFunc4()
+        self.testFucn5()
     }
     
     func testFunc2(){
@@ -101,14 +102,54 @@ class ViewController: UIViewController {
             print(err)
         }
         
-   
-        
         testScheduler.run()
-        
-       
+    
     }
    
+    func testFunc4(){
+        var handlerCalledTimes = 0
+        let signalProducer = SignalProducer<String, NSError>() { observer, disposable in
+            handlerCalledTimes += 1
+            
+            return
+        }
+        
+        signalProducer.start()
+        signalProducer.start()
+        
+        print(handlerCalledTimes)
     
+    }
+    
+    func testFucn5(){
+    
+        var disposable: Disposable!
+        
+        let producer = SignalProducer<Int, NoError> { observer, innerDisposable in
+            disposable = innerDisposable
+            
+//            innerDisposable.addDisposable {
+                // This is necessary to keep the observer long enough to
+                // even test the memory management.
+                observer.sendNext(78)
+//            }
+        }
+        
+        weak var objectRetainedByObserver: NSObject?
+        producer.startWithSignal { signal, _ in
+            let object = NSObject()
+            objectRetainedByObserver = object
+
+            signal.observeNext({ (next) in
+                print("next = \(next)")
+            })
+        }
+        
+        print(objectRetainedByObserver)
+        
+//        disposable.dispose()
+        print(objectRetainedByObserver)
+    }
     
     func creatSingle() -> Signal<String , NoError>{
         return Signal{
@@ -125,10 +166,6 @@ class ViewController: UIViewController {
         
     }
     
-    
-    
-    
-
 
 }
 
