@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24314C7E1CE99CEF00940933 /* GitTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24314C7D1CE99CEF00940933 /* GitTestViewController.swift */; };
 		249A0D271CCF6ED000C715D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A0D261CCF6ED000C715D7 /* AppDelegate.swift */; };
 		249A0D291CCF6ED000C715D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A0D281CCF6ED000C715D7 /* ViewController.swift */; };
 		249A0D2C1CCF6ED000C715D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249A0D2A1CCF6ED000C715D7 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24314C7D1CE99CEF00940933 /* GitTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitTestViewController.swift; sourceTree = "<group>"; };
 		249A0D231CCF6ED000C715D7 /* ReactiveCocoa3Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveCocoa3Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		249A0D261CCF6ED000C715D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		249A0D281CCF6ED000C715D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				249A0D261CCF6ED000C715D7 /* AppDelegate.swift */,
 				249A0D281CCF6ED000C715D7 /* ViewController.swift */,
+				24314C7D1CE99CEF00940933 /* GitTestViewController.swift */,
 				249A0D2A1CCF6ED000C715D7 /* Main.storyboard */,
 				249A0D2D1CCF6ED000C715D7 /* Assets.xcassets */,
 				249A0D2F1CCF6ED000C715D7 /* LaunchScreen.storyboard */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				249A0D291CCF6ED000C715D7 /* ViewController.swift in Sources */,
+				24314C7E1CE99CEF00940933 /* GitTestViewController.swift in Sources */,
 				249A0D271CCF6ED000C715D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
